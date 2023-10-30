@@ -82,3 +82,16 @@ look for file objects in memory recommend piping to grep for a direct search 
 
 	vol.py filescan 
 	q 
+
+
+Extra:
+	vol.py -f “/path/to/file” windows.info
+	vol.py -f “/path/to/file” windows.pstree
+	vol.py -f “/path/to/file” -o “/path/to/dir” windows.dumpfiles ‑‑pid <PID>
+	vol.py -f “/path/to/file” -o “/path/to/dir” windows.memmap ‑‑dump ‑‑pid <PID>
+	vol.py -f “/path/to/file” windows.handles ‑‑pid <PID>
+	vol.py -f “/path/to/file” windows.dlllist ‑‑pid <PID>
+	vol.py -f “/path/to/file” windows.cmdline
+	vol.py -f “/path/to/file” windows.netstat
+	vol.py -f “/path/to/file” windows.malfind
+	vol.py -f “/path/to/file” yarascan -y “/path/to/file.yar”
