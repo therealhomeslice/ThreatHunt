@@ -1,0 +1,40 @@
+How to list all Windows services:
+sc queryex type=service state=all
+
+How to list all Windows services (names only):
+sc
+
+How to manage services in systemd on Linux
+ queryex type=service state=all | find /i "SERVICE_NAME:"
+
+How to list all the running Windows services, excluding the stopped / inactive ones:
+sc queryex type=service state=active
+
+How to list all the stopped / inactive Windows services, excluding the running ones:
+sc queryex type=service state=inactive
+
+How to search for a given Windows service (by name):
+sc queryex type=service state=all | find /i "SERVICE_NAME: MyServiceName"
+
+How to retrieve the status of a given service (by name):
+sc query MyServiceName
+
+PowerShell commands
+
+How to list all Windows services:
+Get-Service
+
+How to list all Windows services (names only):
+sc queryex type=service state=all | find /i "SERVICE_NAME:"
+
+How to list all the running Windows services, excluding the stopped / inactive ones:
+Get-Service | Where-Object {$_.Status -eq "Running"}
+
+How to list all the stopped / inactive Windows services, excluding the running ones:
+Get-Service | Where-Object {$_.Status -eq "Stopped"}
+
+How to search for a specific Windows service:
+Get-Service | Where-Object {$_.Name -like "*MyServiceName*"}
+
+How to retrieve the status of a given service (by name):
+Get-Service MyServiceName*
