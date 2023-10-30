@@ -225,3 +225,106 @@ Fluffe++ 
 	File_system 
 	
 	ssh -t <user>@<ip> "sudo echo ----------hostname----------;hostname;echo ----------System_Information----------;uname -a;echo ----------System_uptime----------;uptime;echo ----- /opt/bitnami/apps/dokuwiki/htdocs/data/pages/students/21bnotes.txt
+---------
+Hunt Methodology
+- Intel Driven
+--> Look for specific activity of IOCs
+
+- Behavioral Hunt
+-> Looking for unusual 
+---> Baseline Accounts
+---> Ports/Protocols
+---> Schtasks 
+---> Services
+
+
+Host Tasks:
+	PPS
+	Registry
+	Autoruns
+	Users/Accounts
+	Schtasks
+	USB
+	Handles & DLLs
+	
+
+- IOC Hunt
+
+So you found a beacon...
+> Where is beacon calling from?
+< IP Address or Hostname
+> What process is the beacon calling from?
+< PID
+> What spawned the process?
+< PPID
+> What does the process have opened?
+< handles
+> What user is running the process?
+< Users
+>>> Where else has this user logged into?
+> What other actions has the user performed?
+< Prefetched
+> What else is talking on this computer?
+< Netstat, Mapped Shares 
+> What else is running on this computer?
+< Process List
+> Initial Access?
+< PPID 
+< Email?
+< Persistence?
+< Psexec? 
+******************************
+> you found a computer with IOCs
+< IP Address or Host Name
+> Persistence?
+< Schedule Tasks
+< Services
+< Autoruns 
+< RegKeys
+******************************
+> So you're getting Desparate
+< Least Frequency Analysis
+
+Least Frequency Analysis is the practice of finding anomalies across computers 
+> LFA Scripts 
+
+LFA Via Kibana
+Filter for Process/Services/Schtasks/Account - Sort by Count 
+Then Filter for where that input value is at
+
+
+
+
+psexec \\Remote-IP -c [Executable] -accepteula
+
+
+
+#Schtasks:
+dir c:\windows\system32\Tasks\ -Recurse | sort -property CreationTime | ft CreationTime, Fullname
+invoke-command -scriptblock {dir c:\windows\system32\Tasks\ -Recurse | sort -property CreationTime | ft CreationTime, Fullname} -session $session
+
+Windows MIP Set up
+
+rename-computer “new-hostname”
+restart-computer
+
+Start-Service “Windows Defender Firewall”
+
+Set-NetFirewallProfile -Profile * -Enabled True -DefaultInboundAction Block -DefaultOutboundAction Allow -AllowInboundRules False
+
+Remove-NetFirewallRule
+Remove-NetFirewallRule -Displayname “name”
+
+
+New-NetFirewallRule -DisplayName “Name” -Direction <Inbound/Outbound> -LocalPort <port, port, etc> -RemoteAddress <ip, ip, ip, etc> -Protocol <tcp, udp, icmpv4, icmpv6, any> -Action <Allow/Block>
+
+Set-NetFirewallProfile -AllowInboundRules True
+
+
+Accountability:
+
+sudo tcpdump -nn -i ens192 -w <name.pcap>
+
+
+SCP Pull: scp <Username>@<IPorHost>:<PathToFile>   <LocalFileLocation>
+SCP Push: scp /home/linuxhint/file2 kali@192.168.1.107:dir/

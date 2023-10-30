@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0. Knowledge/Notes/Lockheed.md",
+                "file": "0. Knowledge/Kill Chains/Lockheed.md",
                 "mode": "source",
                 "source": false
               }
@@ -162,9 +162,81 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b911f33cf3832d2f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3. Initial Access/README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0632f904b331fab9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10. Lateral Movement/Windows.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a44e894653c60122",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Misc/Dashboard.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fb0b1297c1e49de4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Misc/unsorted pastables.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7ea0200982a57c9b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "870967a10c0287fa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 12
+        "currentTab": 18
       }
     ],
     "direction": "vertical"
@@ -230,7 +302,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Yara.md",
+                "file": "0. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -247,7 +319,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Yara.md",
+                "file": "0. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -270,7 +342,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Yara.md"
+                "file": "0. Knowledge/99. Senior JQR/1.3  Host Knowledge.md"
               }
             }
           }
@@ -291,44 +363,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "494f47b93bc8a6f0",
+  "active": "870967a10c0287fa",
   "lastOpenFiles": [
-    "Tools/Bloodhound.md",
-    "Tools/Splunk.md",
-    "Tools/Metasponse/Metasponse Start.md",
+    "0. Knowledge/99. Senior JQR/1.4 Enterprise Domain Knoweldge.md",
     "Tools/Agent Deployment/winlogbeats.md",
-    "Misc/unsorted pastables.md",
-    "README.md",
+    "0. Knowledge/99. Senior JQR/3.1 Demonstration.md",
+    "0. Knowledge/99. Senior JQR/1.5 Risk Mitigation & After Action.md",
+    "0. Knowledge/99. Senior JQR/2.1 Tools.md",
+    "5. Persistence/Linux - Persistence.md",
+    "5. Persistence/Unix Persistence.md",
+    "5. Persistence/Windows Persistence.md",
+    "6. PrivEsc/README.md",
+    "4. Execution/README.md",
+    "3. Initial Access/README.md",
+    "Tools/Splunk.md",
+    "Tools/Kibana.md",
+    "Tools/Wireshark.md",
+    "Tools/Yara.md",
+    "Tools/Sysinternals/Remoting.md",
+    "Tools/Metasponse/Metasponse Start.md",
+    "Scripts/LinEnum/CHANGELOG.md",
+    "Scripts/LinEnum/CONTRIBUTORS.md",
+    "Tools/Bloodhound.md",
+    "Tools/IRIS.md",
     "Misc/Network Hunting.md",
     "Misc/Dashboard.md",
-    "0. Knowledge/Notes/MITRE.md",
+    "README.md",
+    "0. Knowledge/Kill Chains/Lockheed.md",
+    "0. Knowledge/Windows/Windows Processes.md",
+    "Red Team",
     "Misc",
     "6. PrivEsc",
     "4. Execution",
-    "0. Knowledge/Windows/Sysmon.md",
-    "0. Knowledge/Windows/Active Directory.md",
     "Tools/Agent Deployment",
-    "13. Exfiltration/USB.md",
-    "0. Knowledge/Quick Links.md",
     "Scripts/WindowsEnum/WindowsEnum.ps1",
-    "Scripts/WindowsEnum/README.md",
     "Scripts/WindowsEnum",
     "Scripts/New folder",
-    "Scripts/README.md",
     "Scripts/WindowsEnum.ps1",
-    "Tools/Yara.md",
-    "Scripts/LinEnum/README.md",
     "Scripts/LinEnum/LinEnum.sh",
-    "Scripts/LinEnum/LICENSE",
-    "Scripts/LinEnum/CONTRIBUTORS.md",
-    "Scripts/LinEnum/CHANGELOG.md",
-    "Tools/Scripts.md",
-    "10. Lateral Movement/Windows.md",
-    "2023-10-29.md",
-    "0. Knowledge/Windows/GPOs.md",
-    "0. Knowledge/Windows/Windows Processes.md",
-    "5. Persistence/Unix Persistence.md",
-    "5. Persistence/Untitled.md",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]
