@@ -1,0 +1,78 @@
+Two PS Modules with their cmdlets
+•	Microsoft.PowerShell.Management
+  o	Add-Content
+  o	Clear-Content
+  o	Clear-Item
+  o	Clear-ItemProperty
+  o	Clear-RecycleBin
+  o	Convert-Path
+  o	Copy-Item
+  o	Copy-ItemProperty
+  o	Debug-Process
+  o	Get-ChildItem
+  o	Get-Clipboard
+  o	Get-ComputerInfo
+  o	Get-Content
+  o	Get-HotFix
+  o	Get-Item
+  o	Get-ItemProperty
+  o	Get-ItemPropertyValue
+  o	Get-Location
+  o	Get-Process
+  o	Get-PSDrive
+  o	Get-PSProvider
+  o	Get-Service
+  o	Get-TimeZone
+  o	Invoke-Item
+  o	Join-Path
+  o	Move-Item
+  o	Move-ItemProperty
+  o	New-Item
+  o	New-ItemProperty
+  o	New-PSDrive
+  o	New-Service
+  o	Pop-Location
+  o	Push-Location
+  o	Remove-Item
+  o	Remove-ItemProperty
+  o	Remove-PSDrive
+  o	Remove-Service
+  o	Rename-Computer
+  o	Rename-Item
+  o	Rename-ItemProperty
+  o	Resolve-Path
+  o	Restart-Computer
+  o	Restart-Service
+  o	Resume-Service
+  o	Set-Clipboard
+  o	Set-Content
+  o	Set-Item
+  o	Set-ItemProperty
+  o	Set-Location
+  o	Set-Service
+  o	Set-TimeZone
+  o	Split-Path
+  o	Start-Process
+  o	Start-Service
+  o	Stop-Computer
+  o	Stop-Process
+  o	Stop-Service
+  o	Suspend-Service
+  o	Test-Connection
+  o	Test-Path
+  o	Wait-Process
+•	Microsoft.PowerShell.Host
+  o	Start-Transcript
+  o	Stop-Transcript
+
+•	Microsoft.WSMan.Management
+  Connect-WSMan
+  Invoke-WSManAction
+  New-WSManInstance
+•	CimCmdlets
+  New-CimInstance
+•	Microsoft.PowerShell.Core
+  Invoke-Command
+  New-PSSession
+
+  
