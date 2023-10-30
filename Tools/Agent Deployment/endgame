@@ -1,0 +1,22 @@
+Deploy Endgame
+Can deploy inband through the GUI or out of band with a script
+ENDGAME: Deploy a Sensor to Win(In-Band Mgmt): Endgame Admin Guide(Page 90-93)
+1. Endpoints / Action Toolbar: Discover Endpoints
+1.1: enter ip range / custom port / start scan / finish
+2. After “Scan Completed” /action toolbar: Windows Tab
+3. Select endpoints
+4. Actions: Deploy
+5. Deploy Sensor
+5.1: Select Sensor / Domain Name / Username / Password
+6. Deploy Sensors / Close
+7. Action Toolbar: select Windows tab / Active tab
+8. Verify Endpoints (with sensor installed) in list as hostname of endpoint
+
+ENDGAME: Create Custom Rule: Endgame Admin Guide (Page 68-75) bottom of page
+1. Administration / Rules tab / Create Rule Wizard
+1.1: Compose EQL Query
+1.2: Classify Alert
+1.3: Name Rule
+2. Enable Custom Rule: In Endpoint Policy list select policy to enable
+3. On Enpoint Policy config page, select Adversary Behaviors
+4. Select appropriate rule (toggle on)
