@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0. Knowledge/Kill Chains/Lockheed.md",
+                "file": "00. Knowledge/Kill Chains/Lockheed.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
+                "file": "00. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0. Knowledge/99. Senior JQR/1.5 Risk Mitigation & After Action.md",
+                "file": "00. Knowledge/99. Senior JQR/1.5 Risk Mitigation & After Action.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0. Knowledge/99. Senior JQR/2.1 Tools.md",
+                "file": "00. Knowledge/99. Senior JQR/2.1 Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
+                "file": "00. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
                 "mode": "source",
                 "source": false
               }
@@ -169,7 +169,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. Initial Access/README.md",
+                "file": "03. Initial Access/README.md",
                 "mode": "source",
                 "source": false
               }
@@ -229,7 +229,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
+                "file": "Scripts/CVAH/Test.md",
                 "mode": "source",
                 "source": false
               }
@@ -302,7 +302,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
+                "file": "Scripts/CVAH/Test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -319,7 +319,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
+                "file": "Scripts/CVAH/Test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -342,7 +342,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0. Knowledge/99. Senior JQR/1.3  Host Knowledge.md"
+                "file": "Scripts/CVAH/Test.md"
               }
             }
           }
@@ -365,17 +365,19 @@
   },
   "active": "870967a10c0287fa",
   "lastOpenFiles": [
-    "0. Knowledge/99. Senior JQR/1.4 Enterprise Domain Knoweldge.md",
+    "00. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
+    "Scripts/CVAH/Test.md",
+    "00. Knowledge/99. Senior JQR/1.4 Enterprise Domain Knoweldge.md",
     "Tools/Agent Deployment/winlogbeats.md",
-    "0. Knowledge/99. Senior JQR/3.1 Demonstration.md",
-    "0. Knowledge/99. Senior JQR/1.5 Risk Mitigation & After Action.md",
-    "0. Knowledge/99. Senior JQR/2.1 Tools.md",
-    "5. Persistence/Linux - Persistence.md",
-    "5. Persistence/Unix Persistence.md",
-    "5. Persistence/Windows Persistence.md",
-    "6. PrivEsc/README.md",
-    "4. Execution/README.md",
-    "3. Initial Access/README.md",
+    "00. Knowledge/99. Senior JQR/3.1 Demonstration.md",
+    "00. Knowledge/99. Senior JQR/1.5 Risk Mitigation & After Action.md",
+    "00. Knowledge/99. Senior JQR/2.1 Tools.md",
+    "05. Persistence/Linux - Persistence.md",
+    "05. Persistence/Unix Persistence.md",
+    "05. Persistence/Windows Persistence.md",
+    "06. PrivEsc/README.md",
+    "04. Execution/README.md",
+    "03. Initial Access/README.md",
     "Tools/Splunk.md",
     "Tools/Kibana.md",
     "Tools/Wireshark.md",
@@ -389,12 +391,10 @@
     "Misc/Network Hunting.md",
     "Misc/Dashboard.md",
     "README.md",
-    "0. Knowledge/Kill Chains/Lockheed.md",
-    "0. Knowledge/Windows/Windows Processes.md",
     "Red Team",
     "Misc",
-    "6. PrivEsc",
-    "4. Execution",
+    "06. PrivEsc",
+    "04. Execution",
     "Tools/Agent Deployment",
     "Scripts/WindowsEnum/WindowsEnum.ps1",
     "Scripts/WindowsEnum",
