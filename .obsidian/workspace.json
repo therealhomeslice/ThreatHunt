@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledge/Notes/Lockheed.md",
+                "file": "0. Knowledge/Notes/Lockheed.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Yara.md",
+                "file": "0. Knowledge/Quick Links.md",
                 "mode": "source",
                 "source": false
               }
@@ -206,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Yara.md",
+                "file": "0. Knowledge/Quick Links.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +223,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Yara.md",
+                "file": "0. Knowledge/Quick Links.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -246,7 +246,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Yara.md"
+                "file": "0. Knowledge/Quick Links.md"
               }
             }
           }
@@ -269,8 +269,15 @@
   },
   "active": "929b95990f28275f",
   "lastOpenFiles": [
-    "Network Hunting.md",
     "Tools/Yara.md",
+    "0. Knowledge/Quick Links.md",
+    "Scripts/LinEnum/README.md",
+    "Scripts/LinEnum/LinEnum.sh",
+    "Scripts/LinEnum/LICENSE",
+    "Scripts/LinEnum/CONTRIBUTORS.md",
+    "Scripts/LinEnum/CHANGELOG.md",
+    "Scripts/LinEnum",
+    "Network Hunting.md",
     "Scripts/CVAH/05_Misc_Scripts/regular_expressions.ps1",
     "Scripts/CVAH/05_Misc_Scripts/locate_file.ps1",
     "Scripts/CVAH/05_Misc_Scripts/event_logs.ps1",
@@ -278,20 +285,17 @@
     "Scripts/CVAH/05_Misc_Scripts",
     "Scripts/CVAH/04_LFA_Scripts/lfa_services.ps1",
     "Scripts/CVAH/04_LFA_Scripts/lfa_scheduledtask.ps1",
-    "Scripts/CVAH/04_LFA_Scripts/lfa_process.ps1",
-    "Scripts/CVAH/04_LFA_Scripts/lfa_autoruns.ps1",
-    "Scripts/CVAH/04_LFA_Scripts",
     "Tools/Scripts.md",
     "unsorted pastables.md",
     "README.md",
     "Dashboard.md",
     "Lateral Movement/Windows.md",
     "2023-10-29.md",
-    "Knowledge/Windows/GPOs.md",
+    "0. Knowledge/Windows/GPOs.md",
     "Tools/Splunk.md",
-    "Knowledge/Windows/Sysmon.md",
-    "Knowledge/Windows/Windows Processes.md",
-    "Knowledge/Notes/MITRE.md",
+    "0. Knowledge/Windows/Sysmon.md",
+    "0. Knowledge/Windows/Windows Processes.md",
+    "0. Knowledge/Notes/MITRE.md",
     "Persistence/Unix Persistence.md",
     "Persistence/Untitled.md",
     "Persistence/Windows Persistence.md",
@@ -301,10 +305,7 @@
     "Senior JQR/1.5 Risk Mitigation & After Action.md",
     "Senior JQR/1.4 Enterprise Domain Knoweldge.md",
     "Tools/Sysinternals/Remoting.md",
-    "Tools/Metasponse/Metasponse Start.md",
-    "Senior JQR/3.1 Demonstration.md",
     "Untitled.canvas",
-    "Untitled 1.canvas",
-    "Knowledge/Notes/Lockheed.md"
+    "Untitled 1.canvas"
   ]
 }
