@@ -1,0 +1,166 @@
+Display Name,ShortName
+ActiveX Installer (AxInstSV),AxInstSV
+Adaptive Brightness,SensrSvc
+Application Experience,AeLookupSvc
+Application Host Helper Service,AppHostSvc
+Application Identity,AppIDSvc
+Application Information,Appinfo
+Application Layer Gateway Service,ALG
+Application Management,AppMgmt
+ASP.NET State Service,aspnet_state
+Background Intelligent Transfer Service,BITS
+Base Filtering Engine,BFE
+BitLocker Drive Encryption Service,BDESVC
+Block Level Backup Engine Service,wbengine
+Bluetooth Support Service,bthserv
+BranchCache,PeerDistSvc
+Certificate Propagation,CertPropSvc
+Client for NFS,NfsClnt
+CNG Key Isolation,KeyIso
+COM+ Event System,EventSystem
+COM+ System Application,COMSysApp
+Computer Browser,Browser
+Credential Manager,VaultSvc
+Cryptographic Services,CryptSvc
+DCOM Server Process Launcher,DcomLaunch
+Desktop Window Manager Session Manager,UxSms
+DHCP Client,Dhcp
+Diagnostic Policy Service,DPS
+Diagnostic Service Host,WdiServiceHost
+Diagnostic System Host,WdiSystemHost
+Disk Defragmenter,defragsvc
+Distributed Link Tracking Client,TrkWks
+Distributed Transaction Coordinator,MSDTC
+DNS Client,Dnscache
+Encrypting File System (EFS),EFS
+Extensible Authentication Protocol,EapHost
+Fax,Fax
+Function Discovery Provider Host,fdPHost
+Function Discovery Resource Publication,FDResPub
+Group Policy Client,gpsvc
+Health Key and Certificate Management,hkmsvc
+HomeGroup Listener,HomeGroupListener
+HomeGroup Provider,HomeGroupProvider
+Human Interface Device Access,hidserv
+IIS Admin Service,IISADMIN
+IKE and AuthIP IPsec Keying Modules,IKEEXT
+Indexing Service,CISVC
+Interactive Services Detection,UI0Detect
+Internet Connection Sharing (ICS),SharedAccess
+IP Helper,iphlpsvc
+IPsec Policy Agent,PolicyAgent
+KtmRm for Distributed Transaction Coordinator,KtmRm
+Link-Layer Topology Discovery Mapper,lltdsvc
+LPD Service,LPDSVC
+Media Center Extender Service,Mcx2Svc
+Message Queuing,MSMQ
+Message Queuing Triggers,MSMQTriggers
+Microsoft .NET Framework NGEN v2.0.50727,clr_optimization_v2.0.50727
+Microsoft FTP Service,ftpsvc
+Microsoft iSCSI Initiator Service,MSiSCSI
+Microsoft Software Shadow Copy Provider,swprv
+Multimedia Class Scheduler,MMCSS
+Net.Msmq Listener Adapter,NetMsmqActivator
+Net.Pipe Listener Adapter,NetPipeActivator
+Net.Tcp Listener Adapter,NetTcpActivator
+Net.Tcp Port Sharing Service,NetTcpPortSharing
+Netlogon,Netlogon
+Network Access Protection Agent,napagent
+Network Connections,Netman
+Network List Service,netprofm
+Network Location Awareness,NlaSvc
+Network Store Interface Service,nsi
+Offline Files,CscService
+Parental Controls,WPCSvc
+Peer Name Resolution Protocol,PNRPsvc
+Peer Networking Grouping,p2psvc
+Peer Networking Identity Manager,p2pimsvc
+Performance Logs & Alerts,pla
+Plug and Play,PlugPlay
+PnP-X IP Bus Enumerator,IPBusEnum
+PNRP Machine Name Publication Service,PNRPAutoReg
+Portable Device Enumerator Service,WPDBusEnum
+Power,Power
+Print Spooler,Spooler
+Problem Reports and Solutions Control Panel Support,wercplsupport
+Program Compatibility Assistant Service,PcaSvc
+Protected Storage,ProtectedStorage
+Quality Windows Audio Video Experience,QWAVE
+Remote Access Auto Connection Manager,RasAuto
+Remote Access Connection Manager,RasMan
+Remote Desktop Configuration,SessionEnv
+Remote Desktop Services,TermService
+Remote Desktop Services UserMode Port Redirector,UmRdpService
+Remote Procedure Call (RPC),RpcSs
+Remote Procedure Call (RPC) Locator,RpcLocator
+Remote Registry,RemoteRegistry
+RIP Listener,iprip
+Routing and Remote Access,RemoteAccess
+RPC Endpoint Mapper,RpcEptMapper
+SeaPort,SeaPort
+Secondary Logon,seclogon
+Secure Socket Tunneling Protocol Service,SstpSvc
+Security Accounts Manager,SamSs
+Security Center,wscsvc
+Server,LanmanServer
+Shell Hardware Detection,ShellHWDetection
+Simple TCP/IP Services,simptcp
+Smart Card,SCardSvr
+Smart Card Removal Policy,SCPolicySvc
+SNMP Service,SNMP
+SNMP Trap,SNMPTRAP
+Software Protection,sppsvc
+SPP Notification Service,sppuinotify
+SSDP Discovery,SSDPSRV
+Storage Service,StorSvc
+Superfetch,SysMain
+System Event Notification Service,SENS
+Tablet PC Input Service,TabletInputService
+Task Scheduler,Schedule
+TCP/IP NetBIOS Helper,lmhosts
+Telephony,TapiSrv
+Telnet,TlntSvr
+Themes,Themes
+Thread Ordering Server,THREADORDER
+TPM Base Services,TBS
+UPnP Device Host,upnphost
+User Profile Service,ProfSvc
+Virtual Disk,vds
+Volume Shadow Copy,VSS
+Web Management Service,WMSVC
+WebClient,WebClient
+Windows Audio,AudioSrv
+Windows Audio Endpoint Builder,AudioEndpointBuilder
+Windows Backup,SDRSVC
+Windows Biometric Service,WbioSrvc
+Windows CardSpace,idsvc
+Windows Color System,WcsPlugInService
+Windows Connect Now ? Config Registrar,wcncsvc
+Windows Defender,WinDefend
+Windows Driver Foundation ? User-mode Driver Framework,wudfsvc
+Windows Error Reporting Service,WerSvc
+Windows Event Collector,Wecsvc
+Windows Event Log,EventLog
+Windows Firewall,MpsSvc
+Windows Font Cache Service,FontCache
+Windows Image Acquisition (WIA),StiSvc
+Windows Installer,msiserver
+Windows Live Family Safety,fsssvc
+Windows Management Instrumentation,Winmgmt
+Windows Media Center Receiver Service,ehRecvr
+Windows Media Center Scheduler Service,ehSched
+Windows Media Player Network Sharing Service,WMPNetworkSvc
+Windows Modules Installer,TrustedInstaller
+Windows Presentation Foundation Font Cache 3.0.0.0,FontCache3.0.0.0
+Windows Process Activation Service,WAS
+Windows Remote Management (WS-Management),WinRM
+Windows Search,WSearch
+Windows Time,W32Time
+Windows Update,wuauserv
+WinHTTP Web Proxy Auto-Discovery Service,WinHttpAutoProxySvc
+Wired AutoConfig,dot3svc
+WLAN AutoConfig,Wlansvc
+WMI Performance Adapter,wmiApSrv
+Workstation,LanmanWorkstation
+World Wide Web Publishing Service,W3SVC
+WWAN AutoConfig,WwanSvc
