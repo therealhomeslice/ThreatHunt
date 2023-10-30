@@ -6,3 +6,9 @@ From a Nessus scan on the Key Terrain the following level of vulnerabilities nee
 4.	Low: Low-risk vulnerabilities that have minimal impact on the system's security. These vulnerabilities are typically less critical and may not require immediate attention. However, it's recommended to address them over time to maintain a secure environment.
 5.	Informational: This category includes non-security-related findings that provide additional information about the scanned system, such as system configurations, software versions, or other details that can help with system management or compliance.
 6.	Compliance: Nessus can also include a category specific to compliance-related vulnerabilities. These vulnerabilities are often tied to regulatory standards and industry best practices. The compliance category helps identify issues that may impact the system's adherence to specific standards, such as PCI DSS, HIPAA, or ISO 27001.
+
+1.	Run Nessus
+2.	Establish a baseline inventory of all production systems.
+3.	Prioritize patches based on their criticality either for security or functional reasons.
+4.	Automate the patch management process to decrease the time between the release and application of patches.
+5.	Validate that patches work as expected and don’t break any of your systems or applications.
