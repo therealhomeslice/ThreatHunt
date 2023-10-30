@@ -1,3 +1,4 @@
+https://haggis-m.medium.com/hunting-with-sysmon-38de012e62e6
 # List of Sysmon Event IDs:
 
 ## Event ID 1: Process creation

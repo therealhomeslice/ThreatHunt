@@ -22,3 +22,4 @@ Copy-Item [C:\Path\to\Output\Item] -Destination [C:\Where\you\want\to\place\on\y
 psexec \\Remote-IP -c [Executable] -accepteula
 
 **
+

@@ -1,0 +1,310 @@
+{
+  "main": {
+    "id": "5dee1344d3b2de72",
+    "type": "split",
+    "children": [
+      {
+        "id": "df95adb2048abc4e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ac11fa760084359b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Knowledge/Notes/Lockheed.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "32b0af62a16ee5d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Senior JQR/1.3  Host Knowledge.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7695bb88b1b4941a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Senior JQR/1.5 Risk Mitigation & After Action.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8935f0a1a8fcc99a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Senior JQR/2.1 Tools.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "92d4daab373d937e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Senior JQR/1.3  Host Knowledge.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f30a54068473c0a9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Metasponse/Metasponse Start.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "48b394e193d4ddd7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Bloodhound.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0f95412eb40cbe2e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Network Hunting.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c04345253c2e30e3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Network Hunting.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a061b2c6e4a9a198",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Network Hunting.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "929b95990f28275f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Yara.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 10
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3be4e395b5fe5b8f",
+    "type": "split",
+    "children": [
+      {
+        "id": "c0cdd02971457110",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8d4e3dee0029c941",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "35eb80ca03cf76ea",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b4480675e36b48de",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 375.5
+  },
+  "right": {
+    "id": "e1bf24cbda0a3621",
+    "type": "split",
+    "children": [
+      {
+        "id": "83befa2b6294342a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "98755e873926ffe5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Tools/Yara.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "88ca321a21dd3f95",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Tools/Yara.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b063136897ac6200",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "61513450cb5faf8e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Tools/Yara.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "929b95990f28275f",
+  "lastOpenFiles": [
+    "Network Hunting.md",
+    "Tools/Yara.md",
+    "Scripts/CVAH/05_Misc_Scripts/regular_expressions.ps1",
+    "Scripts/CVAH/05_Misc_Scripts/locate_file.ps1",
+    "Scripts/CVAH/05_Misc_Scripts/event_logs.ps1",
+    "Scripts/CVAH/05_Misc_Scripts/copy_session.ps1",
+    "Scripts/CVAH/05_Misc_Scripts",
+    "Scripts/CVAH/04_LFA_Scripts/lfa_services.ps1",
+    "Scripts/CVAH/04_LFA_Scripts/lfa_scheduledtask.ps1",
+    "Scripts/CVAH/04_LFA_Scripts/lfa_process.ps1",
+    "Scripts/CVAH/04_LFA_Scripts/lfa_autoruns.ps1",
+    "Scripts/CVAH/04_LFA_Scripts",
+    "Tools/Scripts.md",
+    "unsorted pastables.md",
+    "README.md",
+    "Dashboard.md",
+    "Lateral Movement/Windows.md",
+    "2023-10-29.md",
+    "Knowledge/Windows/GPOs.md",
+    "Tools/Splunk.md",
+    "Knowledge/Windows/Sysmon.md",
+    "Knowledge/Windows/Windows Processes.md",
+    "Knowledge/Notes/MITRE.md",
+    "Persistence/Unix Persistence.md",
+    "Persistence/Untitled.md",
+    "Persistence/Windows Persistence.md",
+    "Tools/Bloodhound.md",
+    "Senior JQR/1.3  Host Knowledge.md",
+    "Senior JQR/2.1 Tools.md",
+    "Senior JQR/1.5 Risk Mitigation & After Action.md",
+    "Senior JQR/1.4 Enterprise Domain Knoweldge.md",
+    "Tools/Sysinternals/Remoting.md",
+    "Tools/Metasponse/Metasponse Start.md",
+    "Senior JQR/3.1 Demonstration.md",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "Knowledge/Notes/Lockheed.md"
+  ]
+}
