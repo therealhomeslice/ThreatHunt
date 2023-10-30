@@ -12,3 +12,26 @@ From a Nessus scan on the Key Terrain the following level of vulnerabilities nee
 3.	Prioritize patches based on their criticality either for security or functional reasons.
 4.	Automate the patch management process to decrease the time between the release and application of patches.
 5.	Validate that patches work as expected and don’t break any of your systems or applications.
+
+
+
+
+---------
+DISA, “Security Readiness Review (SRR).”
+https://public.cyber.mil/announcement/disa-releases-the-following-updated-security-guidance-security-readiness-review-scripts-supplemental-automation-content-and-benchmarks/
+(STIG Download Link)
+Confluence: Nessus Compliance Scan: https://confluence.90cos.cdl.af.mil/display/OJCCTM/Nessus
+1. Download the appropriate DISA STIG checklists for the systems that you are going to scan (OS Type/version dependent)
+1.1: For Manual Checks download STIG Viewer
+1.1.1: Load appropriate checklist / go line by line on each item
+1.1.2: Repeat process on each box
+1.2: For Semi Manual (Per Machine) Checks download SCAP (Win Only)
+1.2.1: Open SCAP on Local PC, load STIG checklist into SCAP
+1.2.2: Run SCAP and go line by line on any failed checks
+1.2.3: Repeat process on each box
+2. Using the Nessus, build a few compliance scans for each OS Type/Ver
+2.1: Add IP Range
+2.2: Add System Credentials
+2.3: Load STIG Checklist
+2.4: Run Scan(s) / receive reports for all machines hit in each scan
+
