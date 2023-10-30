@@ -1,4 +1,5 @@
 https://haggis-m.medium.com/hunting-with-sysmon-38de012e62e6
+https://www.blackhillsinfosec.com/a-sysmon-event-id-breakdown/
 # List of Sysmon Event IDs:
 
 ## Event ID 1: Process creation

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Senior JQR/1.3  Host Knowledge.md",
+                "file": "0. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Senior JQR/1.5 Risk Mitigation & After Action.md",
+                "file": "0. Knowledge/99. Senior JQR/1.5 Risk Mitigation & After Action.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Senior JQR/2.1 Tools.md",
+                "file": "0. Knowledge/99. Senior JQR/2.1 Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Senior JQR/1.3  Host Knowledge.md",
+                "file": "0. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Network Hunting.md",
+                "file": "Misc/Network Hunting.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Network Hunting.md",
+                "file": "Misc/Network Hunting.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Network Hunting.md",
+                "file": "Misc/Network Hunting.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,14 +133,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0. Knowledge/Quick Links.md",
+                "file": "Misc/Dashboard.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "86cfe16b8e780d4f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Agent Deployment/winlogbeats.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "494f47b93bc8a6f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Yara.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 12
       }
     ],
     "direction": "vertical"
@@ -206,7 +230,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0. Knowledge/Quick Links.md",
+                "file": "Tools/Yara.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +247,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0. Knowledge/Quick Links.md",
+                "file": "Tools/Yara.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -246,7 +270,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0. Knowledge/Quick Links.md"
+                "file": "Tools/Yara.md"
               }
             }
           }
@@ -267,44 +291,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "929b95990f28275f",
+  "active": "494f47b93bc8a6f0",
   "lastOpenFiles": [
-    "Tools/Yara.md",
+    "Tools/Bloodhound.md",
+    "Tools/Splunk.md",
+    "Tools/Metasponse/Metasponse Start.md",
+    "Tools/Agent Deployment/winlogbeats.md",
+    "Misc/unsorted pastables.md",
+    "README.md",
+    "Misc/Network Hunting.md",
+    "Misc/Dashboard.md",
+    "0. Knowledge/Notes/MITRE.md",
+    "Misc",
+    "6. PrivEsc",
+    "4. Execution",
+    "0. Knowledge/Windows/Sysmon.md",
+    "0. Knowledge/Windows/Active Directory.md",
+    "Tools/Agent Deployment",
+    "13. Exfiltration/USB.md",
     "0. Knowledge/Quick Links.md",
+    "Scripts/WindowsEnum/WindowsEnum.ps1",
+    "Scripts/WindowsEnum/README.md",
+    "Scripts/WindowsEnum",
+    "Scripts/New folder",
+    "Scripts/README.md",
+    "Scripts/WindowsEnum.ps1",
+    "Tools/Yara.md",
     "Scripts/LinEnum/README.md",
     "Scripts/LinEnum/LinEnum.sh",
     "Scripts/LinEnum/LICENSE",
     "Scripts/LinEnum/CONTRIBUTORS.md",
     "Scripts/LinEnum/CHANGELOG.md",
-    "Scripts/LinEnum",
-    "Network Hunting.md",
-    "Scripts/CVAH/05_Misc_Scripts/regular_expressions.ps1",
-    "Scripts/CVAH/05_Misc_Scripts/locate_file.ps1",
-    "Scripts/CVAH/05_Misc_Scripts/event_logs.ps1",
-    "Scripts/CVAH/05_Misc_Scripts/copy_session.ps1",
-    "Scripts/CVAH/05_Misc_Scripts",
-    "Scripts/CVAH/04_LFA_Scripts/lfa_services.ps1",
-    "Scripts/CVAH/04_LFA_Scripts/lfa_scheduledtask.ps1",
     "Tools/Scripts.md",
-    "unsorted pastables.md",
-    "README.md",
-    "Dashboard.md",
-    "Lateral Movement/Windows.md",
+    "10. Lateral Movement/Windows.md",
     "2023-10-29.md",
     "0. Knowledge/Windows/GPOs.md",
-    "Tools/Splunk.md",
-    "0. Knowledge/Windows/Sysmon.md",
     "0. Knowledge/Windows/Windows Processes.md",
-    "0. Knowledge/Notes/MITRE.md",
-    "Persistence/Unix Persistence.md",
-    "Persistence/Untitled.md",
-    "Persistence/Windows Persistence.md",
-    "Tools/Bloodhound.md",
-    "Senior JQR/1.3  Host Knowledge.md",
-    "Senior JQR/2.1 Tools.md",
-    "Senior JQR/1.5 Risk Mitigation & After Action.md",
-    "Senior JQR/1.4 Enterprise Domain Knoweldge.md",
-    "Tools/Sysinternals/Remoting.md",
+    "5. Persistence/Unix Persistence.md",
+    "5. Persistence/Untitled.md",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]
