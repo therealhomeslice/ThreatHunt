@@ -1,0 +1,8 @@
+From a Nessus scan on the Key Terrain the following level of vulnerabilities need prioritised by category
+
+1.	Critical: This category includes vulnerabilities that pose a significant risk to the security of the scanned system. These vulnerabilities often have a high severity level and can potentially lead to unauthorized access, data breaches, or system compromise.
+2.	High: High-risk vulnerabilities that may not be as severe as critical ones but still present a significant security concern. They can potentially lead to unauthorized access or system compromise if left unaddressed.
+3.	Medium: Medium-risk vulnerabilities that have a moderate impact on the system's security. These vulnerabilities might not pose an immediate threat but should still be addressed to reduce the overall risk level.
+4.	Low: Low-risk vulnerabilities that have minimal impact on the system's security. These vulnerabilities are typically less critical and may not require immediate attention. However, it's recommended to address them over time to maintain a secure environment.
+5.	Informational: This category includes non-security-related findings that provide additional information about the scanned system, such as system configurations, software versions, or other details that can help with system management or compliance.
+6.	Compliance: Nessus can also include a category specific to compliance-related vulnerabilities. These vulnerabilities are often tied to regulatory standards and industry best practices. The compliance category helps identify issues that may impact the system's adherence to specific standards, such as PCI DSS, HIPAA, or ISO 27001.
