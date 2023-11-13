@@ -328,3 +328,40 @@ sudo tcpdump -nn -i ens192 -w <name.pcap>
 
 SCP Pull: scp <Username>@<IPorHost>:<PathToFile>   <LocalFileLocation>
 SCP Push: scp /home/linuxhint/file2 kali@192.168.1.107:dir/
+
+
+Elevated Execution Permissions / Data staging
+
+	Setuid: find / -perm -4000 -type f -exec ls -ld {} \;
+	
+	Setgid: find / -user root -2000 -exec ls -ldb {} \;
+	
+	Setuid and Setgid: find / -user root -perm -6000 -exec ls -ldb {} \;
+	
+	Data staging in Linux images: find ./ -type f -name ".jpg" -o -name ".png" -o -name "*.gif"
+
+ADS Detection
+
+	To discover files using Alternate Data Streams (ADS), you can use the following command in Windows command prompt:
+		dir /r
+	This command will display all files and their associated ADS on the file system.
+		dir /r /s | findstr “:$DATA”
+	If you know the name of a file you would like to check for an ADS via powershell, you can use the following syntax:
+		PS> Get-Item -Path .\Testing.txt -Stream 
+
+Malicious Hidden FIles
+	Use either the attrib or dir commands.
+	Viewing hidden files with dir and attrib command:
+	dir /ah
+	attrib -s -h -r /s /d *. *
+
+Malicious WMI Event Subscription:
+	Get-WmiObject -Namespace root\subscription -Class __FilterToConsumerBinding
+	
+	EventID 19 User created Wmi filter
+	EventID 20 User created Wmi consumer
+	EventID 21 User created Wmi subscription
+	
+	__EventFilter is a WQL query that outlines the trigger event of interest.
+	__EventConsumer is an action to perform upon triggering an event.
+	__FilterToConsumerBinding is the registration mechanism that binds a filter to a consumer.
