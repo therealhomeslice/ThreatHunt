@@ -1,7 +1,3 @@
-**9/28/2022 Pastables [WICNET-U Wiki!] 
-
-![](https://lh7-us.googleusercontent.com/uRXlm3Cgz0sTSHI8BE6OPL8Gor5D2de5Q6VsN2NmaRa6DTcwPAei_P_Fo2xR2AyGR4LbnF3Hd7b8oaRP4yjAETmo_3FtEDMALlncBTmD6xYLpdMNSmkZ8KBFMS6nF6uqH0bsybFS2buApxDcxeF_1NA)WICNET-U Wiki! 
-
 Pastables 
 -------------------------------------------------------------------
 url of wiki: wiki.wicnet.af.mil 
@@ -55,16 +51,6 @@ System Internals and Metasponse
 |rootkitrevealer|rootkitrevealer -a -accepteula|Search for common rootkits|N/A|
 |psinfo|psinfo -accepteula|Quick look at system info|Collectors/sysinfo|
 |regjump|regjump <key> -accepteula|Regedit at specified key|collectors/regkeys - requires specific regkey inputs|
-
-  
-  
-
-http://wiki.wicnet.af.mil/doku.php/students:21bnotes 2/7 
-
-9/28/2022 Pastables [WICNET-U Wiki!] 
-
-|   |   |   |   |
-|---|---|---|---|
 |SysInternals|Usage|Notes|Metasponse|
 |strings|strings -o <-s> <file\|dir> -accepteula|Run strings on file or directory, -s for recursive|N/A|
 |psexec|psexec \\remote -c <exe -args> -accepteula|Run command on remote system|N/A|
@@ -121,7 +107,7 @@ User Investigation 
 	To get user info on remote system 
 	Psexec cmd to a remote host 
 	
-		.\psexec \\<ip> -u <domain>\<domain self> cmd 
+.\psexec \\<ip> -u <domain>\<domain self> cmd 
 		input password 
 		then run net user 
 		net user <target user> /domain 

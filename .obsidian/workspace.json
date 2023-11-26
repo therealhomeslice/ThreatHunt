@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Visualization.md",
+                "file": "00. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 359.5
   },
   "right": {
     "id": "e1bf24cbda0a3621",
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Visualization.md",
+                "file": "00. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Visualization.md",
+                "file": "00. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Visualization.md"
+                "file": "00. Knowledge/99. Senior JQR/1.3  Host Knowledge.md"
               }
             }
           }
@@ -185,36 +185,36 @@
   },
   "active": "20e2fba16d4a8363",
   "lastOpenFiles": [
-    "README.md",
-    "Visualization.md",
-    "Yggy Practice.md",
+    "00. Knowledge/99. Senior JQR/1.4 Enterprise Domain Knoweldge.md",
+    "Scripts/WindowsEnum/README.md",
+    "Scripts/LinEnum/README.md",
+    "Scripts/LinEnum/CONTRIBUTORS.md",
+    "Scripts/LinEnum/CHANGELOG.md",
+    "Red Team/File Traversal.md",
+    "Misc/Network Hunting.md",
     "Misc/unsorted pastables.md",
+    "13. Exfiltration/USB.md",
+    "10. Lateral Movement/Windows.md",
+    "00. Knowledge/Quick Links.md",
+    "00. Knowledge/Windows/Windows Processes.md",
+    "00. Knowledge/Windows/Sysmon.md",
+    "00. Knowledge/Windows/GPOs.md",
+    "00. Knowledge/Windows/Event IDs.md",
+    "00. Knowledge/Windows/Active Directory.md",
+    "05. Persistence/Windows Persistence.md",
+    "05. Persistence/Unix Persistence.md",
+    "05. Persistence/Linux - Persistence.md",
+    "06. PrivEsc/README.md",
+    "Misc/Dashboard.md",
+    "Yggy Practice.md",
+    "Visualization.md",
+    "README.md",
     "Dashboard.md",
-    "2023-11-09.md",
+    "Tools/Yara.md",
     "Untitled 3.canvas",
     "Untitled 2.canvas",
-    "Untitled 2.md",
-    "Untitled 1.md",
-    "00. Knowledge/Kill Chains/Lockheed.md",
-    "00. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
-    "00. Knowledge/99. Senior JQR/1.5 Risk Mitigation & After Action.md",
-    "00. Knowledge/99. Senior JQR/2.1 Tools.md",
-    "Tools/Metasponse/Metasponse Start.md",
-    "Tools/Bloodhound.md",
-    "Misc/Network Hunting.md",
-    "Misc/Dashboard.md",
-    "Tools/Agent Deployment/winlogbeats.md",
-    "Tools/Yara.md",
-    "03. Initial Access/README.md",
-    "10. Lateral Movement/Windows.md",
-    "00. Knowledge/99. Senior JQR/3.1 Demonstration.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
-    "00. Knowledge/99. Senior JQR/1.4 Enterprise Domain Knoweldge.md",
-    "Scripts/Survey.md",
-    "Scripts/user_survey.md",
-    "Scripts/WindowsEnum/README.md",
-    "Scripts/CVAH/Test.md",
     "Red Team",
     "Misc",
     "06. PrivEsc",
