@@ -1,169 +1,4 @@
-# Establish a variable with the desired CIDR range
-$cidrRange = "192.168.0.0/24"  
-
-# Get IP addresses from the CIDR range and adds it to an array 
-$ipAddresses = Get-IPAddressFromCIDR $cidrRange 
- 
-# For each IP in the array
-foreach ($ipAddress in $ipAddresses) { 
-# Write to the screen for the current IP “Checking patch level for $ipAddress..."
-Write-Host "Checking patch level for $ipAddress..." 
-#Ping the current IP address to check if it's reachable; if it is, try below.
-$pingReply = Test-Connection -ComputerName $ipAddress -Count 1 -Quiet 
-if ($pingReply) { 
- 
-try { 
- 
-#Retrieve patch information using WMI 
-$os = Get-WmiObject -Class Win32_OperatingSystem -ComputerName $ipAddress -ErrorAction Stop 
-$patchLevel = $os.CSDVersion 
-$servicePack = $os.ServicePackMajorVersion 
- 
-Write-Host "Patch level for $ipAddress: $patchLevel" 
-Write-Host "Service Pack for $ipAddress: $servicePack" 
-} 
-catch { 
-Write-Host "Error retrieving patch information for $ipAddress: $_" 
-} 
-} 
-else { 
-Write-Host "$ipAddress is not reachable." 
-} 
- 
-Write-Host 
-} 
- 
-# Function to get IP addresses from CIDR range 
-function Get-IPAddressFromCIDR { 
-param ( 
-[Parameter(Mandatory = $true)] 
-[string]$cidrRange 
-) 
- 
-$cidr = $cidrRange -split '/' 
-$ipAddress = $cidr[0] 
-$subnetMask = 0xFFFFFFFF -shl (32 - $cidr[1]) 
- 
-$ip = [System.Net.IPAddress]::Parse($ipAddress).GetAddressBytes() -bor $subnetMask 
- 
-$ipAddresses = @() 
-for ($i = $ip[0]; $i -le $ip[0] + $subnetMask - 1; $i++) { 
-$ipAddresses += [System.Net.IPAddress]::Parse("$([BitConverter]::ToString([BitConverter]::GetBytes($i)) -join '.')") 
-} 
- 
-return $ipAddresses 
-}
-
-
-DNS Records
-```powershell
-function Get-ComputerNameByIP {
-param(
-$IPAddress = $null
-)
-BEGIN {
-}
-PROCESS {
-if ($IPAddress -and $_) {
-throw ‘Please use either pipeline or input parameter’
-break
-} elseif ($IPAddress) {
-([System.Net.Dns]::GetHostbyAddress($IPAddress))
-} elseif ($_) {
-trap [Exception] {
-write-warning $_.Exception.Message
-continue;
-}
-[System.Net.Dns]::GetHostbyAddress($_)
-} else {
-$IPAddress = Read-Host “Please supply the IP Address”
-[System.Net.Dns]::GetHostbyAddress($IPAddress)
-}
-}
-END {
-}
-}
-
-#Use any range you want here
-1..255 | ForEach-Object {”10.20.100.$_”} | Get-ComputerNameByIP
-```
-
-Primitive PSTree
-
-```powershell
-function Print-ProcessTree() {
-
-    function Get-ProcessAndChildProcesses($Level, $Process) {
-        "{0}[{1,-5}] [{2}]" -f ("  " * $Level), $Process.ProcessId, $Process.Name
-        $Children = $AllProcesses | where-object {$_.ParentProcessId -eq $Process.ProcessId -and $_.CreationDate -ge $Process.CreationDate}
-        if ($null -ne $Children) {
-            foreach ($Child in $Children) {
-                Get-ProcessAndChildProcesses ($Level + 1) $Child
-            }
-        }
-    }
-
-    $AllProcesses = Get-CimInstance -ClassName "win32_process"
-    $RootProcesses = @()
-    # Process "System Idle Process" is processed differently, as ProcessId and ParentProcessId are 0
-    # $AllProcesses is sliced from index 1 to the end of the array
-    foreach ($Process in $AllProcesses[1..($AllProcesses.length-1)]) {
-        $Parent = $AllProcesses | where-object {$_.ProcessId -eq $Process.ParentProcessId -and $_.CreationDate -lt $Process.CreationDate}
-        if ($null -eq $Parent) {
-            $RootProcesses += $Process
-        }
-    }
-    # Process the "System Idle process" separately
-    "[{0,-5}] [{1}]" -f $AllProcesses[0].ProcessId, $AllProcesses[0].Name
-    foreach ($Process in $RootProcesses) {
-        Get-ProcessAndChildProcesses 0 $Process
-    }
-}
-```
-
-TCP Connections w/Processes
-
 ```Powershell
-
-Get-NetTCPConnection | Select-Object LocalAddress,LocalPort,RemoteAddress,RemotePort,State,OwningProcess, @{n="ProcessName"; e={( Get-Process -Id $_.OwningProcess).ProcessName}} | Format-Table
-
-
-```
-
-
-Color Management
-
-```Powershell
-
-
-function Format-Color([hashtable] $Colors = @{}, [switch] $SimpleMatch) {
-    $lines = ($input | Out-String) -replace "`r", "" -split "`n"
-    foreach($line in $lines) {
-        $color = ''
-        foreach($pattern in $Colors.Keys){
-            if(!$SimpleMatch -and $line -match $pattern) { $color = $Colors[$pattern] }
-            elseif ($SimpleMatch -and $line -like $pattern) { $color = $Colors[$pattern] }
-        }
-        if($color) {
-            Write-Host -ForegroundColor $color $line
-        } else {
-            Write-Host $line
-        }
-    }
-}
-
-
-cat txtlog.log | Format-Color @{ 'Valid' = 'Red' }
-```
-
-
-```Powershell
-et-CimInstance -ClassName Win32_Process -filter "ProcessID like 3052" | select-object *
-
-```
-
-
-```powershell
 # Usage
 # run script directly from powershell for quick standard checks
 # 
@@ -203,8 +38,9 @@ function Format-Color([hashtable] $Colors = @{}, [switch] $SimpleMatch) {
     }
 }
 
-whost "Windows Enumeration Script v 0.1
-          by absolomb
+whost "Windows Threat Hunt
+          adapted by Homeslice
+          cred: absolomb
        www.sploitspren.com"
 
 
@@ -240,6 +76,7 @@ $standard_commands = [ordered]@{
     'Tasks Folder'                                = 'Get-ChildItem C:\Windows\Tasks | ft';
     'Startup Commands'                            = 'Get-CimInstance Win32_StartupCommand | select Name, command, Location, User | fl';
     'Process Connections'                         = 'Get-NetTCPConnection | Select-Object LocalAddress,LocalPort,RemoteAddress,RemotePort,State,OwningProcess, @{n="ProcessName"; e={( Get-Process -Id $_.OwningProcess).ProcessName}} | Format-Table | Format-Color @{ "Established" = "Yellow" } ';
+    'Services'                                    = 'Get-CimInstance -ClassName Win32_Service | Select-Object -Property @{n="ServiceName";e={$_.name}}, @{n="Status";e={$_.state}}, @{n="StartType";e={$_.startmode}},PathName | Format-Table | Format-Color @{ "Running" = "Yellow" }';
 }
 
 $extended_commands = [ordered]@{
@@ -253,6 +90,17 @@ $extended_commands = [ordered]@{
     'Searching for files with passwords'       = 'Get-ChildItem c:\* -include *.xml,*.ini,*.txt,*.config -Recurse -ErrorAction SilentlyContinue | Where-Object {$_.PSPath -notlike "*C:\temp*" -and $_.PSParentPath -notlike "*Reference Assemblies*" -and $_.PSParentPath -notlike "*Windows Kits*"}| Select-String -Pattern "password" | Out-File C:\temp\password.txt';
     
 }
+
+$domain_commands = [ordered]@{
+    'Get AD Users'                        = 'Get-ADUser -Filter * -Properties Created, LastLogonDate | ft Name, SamAccountName, Created, LastLogonDate';
+    'Get Domain Admins'                        = 'get-adgroupmember "domain admins" | ft name, samaccountname';
+    'Get Enterprise Admins'                    = 'get-adgroupmember "enterprise admins" | ft name, samaccountname';
+    'Get AD Computers'                    = 'Get-AdComputer -Filter * | ft DNSHostName, ObjectClass';
+}
+
+
+
+
 function RunCommands($commands) {
     ForEach ($command in $commands.GetEnumerator()) {
         whost $command.Name
@@ -286,4 +134,11 @@ else {
 
 
 
+
+
+
+```
+
+
+```
 ```

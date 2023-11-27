@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Visualization.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Yggy Practice.md",
+                "file": "Tempnet/Yggy Practice.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,14 +49,61 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Scripts/Survey.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "effbf944e8e2eb8e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "00. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "9790b3ef1e5fe2d9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tempnet/Yggy Practice.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b5302a76db50bdcb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Scripts/Survey.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f1161450da1e68e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Scripts/WindowsEnum/WinHunt.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +169,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
+                "file": "Visualization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +186,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
+                "file": "Visualization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +209,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00. Knowledge/99. Senior JQR/1.3  Host Knowledge.md"
+                "file": "Visualization.md"
               }
             }
           }
@@ -183,34 +230,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "20e2fba16d4a8363",
+  "active": "e87456a560697c89",
   "lastOpenFiles": [
-    "00. Knowledge/99. Senior JQR/1.4 Enterprise Domain Knoweldge.md",
-    "Scripts/WindowsEnum/README.md",
-    "Scripts/LinEnum/README.md",
-    "Scripts/LinEnum/CONTRIBUTORS.md",
-    "Scripts/LinEnum/CHANGELOG.md",
-    "Red Team/File Traversal.md",
-    "Misc/Network Hunting.md",
-    "Misc/unsorted pastables.md",
-    "13. Exfiltration/USB.md",
-    "10. Lateral Movement/Windows.md",
-    "00. Knowledge/Quick Links.md",
-    "00. Knowledge/Windows/Windows Processes.md",
-    "00. Knowledge/Windows/Sysmon.md",
-    "00. Knowledge/Windows/GPOs.md",
-    "00. Knowledge/Windows/Event IDs.md",
-    "00. Knowledge/Windows/Active Directory.md",
-    "05. Persistence/Windows Persistence.md",
-    "05. Persistence/Unix Persistence.md",
-    "05. Persistence/Linux - Persistence.md",
-    "06. PrivEsc/README.md",
-    "Misc/Dashboard.md",
-    "Yggy Practice.md",
-    "Visualization.md",
     "README.md",
     "Dashboard.md",
     "Tools/Yara.md",
+    "Tools/Splunk.md",
+    "Tools/Wireshark.md",
+    "Tools/Kibana.md",
+    "Tools/IRIS.md",
+    "Tools/Bloodhound.md",
+    "00. Knowledge/99. Senior JQR/3.1 Demonstration.md",
+    "00. Knowledge/99. Senior JQR/2.1 Tools.md",
+    "00. Knowledge/99. Senior JQR/1.5 Risk Mitigation & After Action.md",
+    "00. Knowledge/99. Senior JQR/1.4 Enterprise Domain Knoweldge.md",
+    "00. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
+    "Scripts/WindowsEnum/WinHunt.md",
+    "Tempnet/Yggy Notes.md",
+    "Tempnet/Yggy Practice.md",
+    "Visualization.md",
+    "Scripts/Survey.md",
+    "Scripts/LinEnum/README.md",
+    "Scripts/LinEnum/CHANGELOG.md",
+    "Scripts/Python Sweep.md",
+    "Scripts/user_survey.md",
+    "Tempnet",
+    "Scripts/CVAH/Test.md",
+    "Scripts/WindowsEnum/README.md",
+    "Misc/unsorted pastables.md",
+    "Scripts/CVAH/README.md",
     "Untitled 3.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
@@ -223,7 +271,6 @@
     "Scripts/WindowsEnum/WindowsEnum.ps1",
     "Scripts/WindowsEnum",
     "Scripts/New folder",
-    "Scripts/WindowsEnum.ps1",
-    "Scripts/LinEnum/LinEnum.sh"
+    "Scripts/WindowsEnum.ps1"
   ]
 }

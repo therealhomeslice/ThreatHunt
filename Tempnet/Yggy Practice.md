@@ -18,10 +18,10 @@ NOTE: Do not hunt outside the time frame unless specified to. This will cause co
 	Timeframe - +/- 20mins
 ```
 
-2. Validate Endpoints 
+2. [Validate Endpoints 
 	
-```
-	Using any tool, validate all endpoints on the Treasury Network.
+
+	[X} Using any tool, validate all endpoints on the Treasury Network.
 	
 	Constraints 
 		NMAP has been restricted due to bandwith limitations on mission partner network
@@ -29,16 +29,44 @@ NOTE: Do not hunt outside the time frame unless specified to. This will cause co
 		Based on the network map, are the endpoints shipping logs into the SIEM?
 	
 	Is every endpoint shipping logs?
-	Are there any endpoints logging we do not know about?
-	Is the information on the Treasury Network Map accurate? (IP Address, Device function)
-	
-	Update targets file on your desktop to only contain devices within the Workstation subnet unless otherwise directed to be used for agent deployment of Endgame, Velicoraptor for agent deployment and to access vulnerabilities using Nessus on the next shift.
-	
-	Annotate finding in the comments log and report them to your CCL upon completion.
+
+Method 1: Kibana
+``` Kibana
+	Accomplished via creating a table/lens
+	Endpoint Shipping
+	Filter: N/A
+	Lens: Table
+	Rows
+		agent.name
+		host.ip
+	Columns:
+		N/A
+	Metrics
+		count of records	
 ```
 
-3. Baselining and Data Collection Validation
+Method 2:  Remote AD
+
+```powershell
+
+$username = "dc\administrator"
+$password = "whoTF3arey0u?"
+
+$creds = Get-Credential -UserName $username -Message "Enter Creds" 
+
+Invoke-Command -ComputerName 192.168.1.110 -Credential $creds -ScriptBlock {Get-ADComputer -Filter * | Select-Object DNSHostName} 
+
 ```
+
+	[X] Are there any endpoints logging we do not know about?
+	[X] Is the information on the Treasury Network Map accurate? (IP Address, Device function)
+	4
+	[X] Update targets file on your desktop to only contain devices within the Workstation subnet unless otherwise directed to be used for agent deployment of Endgame, Velicoraptor for agent deployment and to access vulnerabilities using Nessus on the next shift.
+	#how do i deploy agents?
+	Annotate finding in the comments log and report them to your CCL upon completion.
+
+
+3. Baselining and Data Collection Validation
 
  1. Based on the devices decovered. Perform the following actions.
 	Query https://www.zerodayinitiative.com/advisories/published/ for Zero days. 
@@ -66,11 +94,14 @@ NOTE: Do not hunt outside the time frame unless specified to. This will cause co
 	    6. Bash(rl)
 	    7. SSH: (x)
 	
-	4. Send file to CCL via rocketchat for plan considerations 
+```powershell
+	I can probably script this
 ```
+	4. Send file to CCL via rocketchat for plan considerations 
+
 
 4. Investigate Endpoint
-```
+
  1. **This task is for the investigation of an endpoint.**
 	**Constraints** 
 		Use of RDP for endpoints restricted by Mission Partner.
@@ -79,13 +110,10 @@ NOTE: Do not hunt outside the time frame unless specified to. This will cause co
   Using your planned hunt methodology IAW unit standards and MITRE ATT&CK matrix provided, identify and provide **AT LEAST 2** additional indicators of compromise to escalate the malicous nature of observed activity.
 	
 	Provide the scope of other host with same indicators from above.
-	
 	Compare Hashes of executables with known bad list of hashes (NIST, NSRL, Bit9)
-	
-	
-	
+		
 	Update task log with any findings and Attach artifacts under Evidences within this case. Uses the naming convention provided. (File-DDMMYYYY-TaskID)
-```
+
 	
 5. Hunt Lateral Movement
 
