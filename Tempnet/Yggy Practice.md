@@ -82,7 +82,115 @@ Invoke-Command -ComputerName 192.168.1.110 -Credential $creds -ScriptBlock {Get-
 	Powershell
 	
 	3. Report findings in text document in the following format below to include systemic issues that could lead to vulnerability. (r) remote (rl) remote and local (l) local (x) inaccessible
-	
+
+```powershell remote
+$targetComputer = "TARGET_COMPUTER_NAME"
+
+# Test Windows Event Viewer
+Write-Host "Testing Windows Event Viewer..."
+try {
+    Invoke-Command -ComputerName $targetComputer -ScriptBlock {
+        Get-EventLog -LogName Application -Newest 1 | Out-Null
+    } -ErrorAction Stop
+    Write-Host "Windows Event Viewer: Accessible"
+} catch {
+    Write-Host "Windows Event Viewer: Not accessible"
+}
+
+# Test Task Scheduler
+Write-Host "Testing Task Scheduler..."
+try {
+    Invoke-Command -ComputerName $targetComputer -ScriptBlock {
+        Get-ScheduledTask -TaskPath "\" | Out-Null
+    } -ErrorAction Stop
+    Write-Host "Task Scheduler: Accessible"
+} catch {
+    Write-Host "Task Scheduler: Not accessible"
+}
+
+# Test Regedit
+Write-Host "Testing Regedit..."
+try {
+    Invoke-Command -ComputerName $targetComputer -ScriptBlock {
+        reg query HKLM\SOFTWARE | Out-Null
+    } -ErrorAction Stop
+    Write-Host "Regedit: Accessible"
+} catch {
+    Write-Host "Regedit: Not accessible"
+}
+
+# Test Windows Management Instrumentation (WMI)
+Write-Host "Testing WMI..."
+try {
+    Invoke-Command -ComputerName $targetComputer -ScriptBlock {
+        Get-WmiObject -Query "SELECT * FROM Win32_ComputerSystem" | Out-Null
+    } -ErrorAction Stop
+    Write-Host "WMI: Accessible"
+} catch {
+    Write-Host "WMI: Not accessible"
+}
+
+# Test PowerShell
+Write-Host "Testing PowerShell..."
+try {
+    Invoke-Command -ComputerName $targetComputer -ScriptBlock {
+        Get-Process | Out-Null
+    } -ErrorAction Stop
+    Write-Host "PowerShell: Accessible"
+} catch {
+    Write-Host "PowerShell: Not accessible"
+}
+```
+
+# Test Windows Event Viewer
+Write-Host "Testing Windows Event Viewer..."
+try {
+    Get-EventLog -LogName Application -Newest 1 | Out-Null
+    Write-Host "Windows Event Viewer: Accessible"
+} catch {
+    Write-Host "Windows Event Viewer: Not accessible"
+}
+
+# Test Task Scheduler
+Write-Host "Testing Task Scheduler..."
+try {
+    Get-ScheduledTask -TaskPath "\" | Out-Null
+    Write-Host "Task Scheduler: Accessible"
+} catch {
+    Write-Host "Task Scheduler: Not accessible"
+}
+
+# Test Regedit
+Write-Host "Testing Regedit..."
+try {
+    reg query HKLM\SOFTWARE | Out-Null
+    Write-Host "Regedit: Accessible"
+} catch {
+    Write-Host "Regedit: Not accessible"
+}
+
+# Test Windows Management Instrumentation (WMI)
+Write-Host "Testing WMI..."
+try {
+    Get-WmiObject -Query "SELECT * FROM Win32_ComputerSystem" | Out-Null
+    Write-Host "WMI: Accessible"
+} catch {
+    Write-Host "WMI: Not accessible"
+}
+
+# Test PowerShell
+Write-Host "Testing PowerShell..."
+try {
+    Get-Process | Out-Null
+    Write-Host "PowerShell: Accessible"
+} catch {
+    Write-Host "PowerShell: Not accessible"
+}
+
+
+
+```
+
 	
 	Host Name: example.com
 	IP Address: 123.123.123.123

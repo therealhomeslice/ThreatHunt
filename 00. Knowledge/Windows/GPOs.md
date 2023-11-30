@@ -16,6 +16,8 @@ $dc = Get-ADDomainController -Discover -Service PrimaryDC Get-GPOReport -All -Do
 
 
 ### Example 1: Generate an HTML report for the specified GPO
-```
+```powershell
 Get-GPOReport -Name "TestGPO1" -ReportType HTML -Path "C:\GPOReports\GPOReport1.html"
 ```
+
+gpo-all | html outfile

